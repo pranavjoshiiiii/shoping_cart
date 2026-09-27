@@ -16,8 +16,8 @@
 .side-bar{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: space-evenly;
+    align-items: center;
     
 }
 .home-window{
@@ -50,9 +50,16 @@ main {
     width: auto;
 
 }
-
-
-
+.item{
+    
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.filters{
+    display: block;
+}
 
 
 
