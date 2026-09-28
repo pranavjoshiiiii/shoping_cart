@@ -6,13 +6,14 @@
    justify-content: space-evenly; 
    flex-wrap: wrap;
 }
+
 .choices{
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
     
 }
-nav button{
+.choices button{
     border: 0px;
     padding: 15px 30px;
     font-size: 30px;
@@ -35,10 +36,11 @@ nav a{
 }
 
 .side-bar{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 40px;
    
 }
 
@@ -65,6 +67,7 @@ main {
     height: 60px; 
     border-radius: 10px;
     transition: 0.3s;
+    margin-left: 45px;
 }
 .logo{
     display: flex;
@@ -125,7 +128,14 @@ nav button:hover span {
     
 }
 
+/* foooter section */
 
+.contact-us,p,h1{
+    margin: 0;
+}
+.contact-us h1{
+    margin-top: 20px;
+}
 
 
 
@@ -151,34 +161,30 @@ smaller screens */
 @media (max-width:1024px) {
     .nav-bar{
     display: flex;
-    flex-wrap: wrap
-
     }
+    .side-bar
     
     nav button{
         width: 100px;
         font-size: medium;
     }
-   .side-bar {
+   .categories-selection{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+   }
     .home-window{
         flex-wrap: wrap;
     }
     
     .logo img{
-        margin-left: 0;
+        margin-left: 45px
     }
-    img {
-      margin-left: 0;
+    .main-content{
+        flex-grow: 1;
     }
     .products{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    margin-left: 10px;
-    align-items: stretch;
+    
     }
     .products img{
         height:100px ;

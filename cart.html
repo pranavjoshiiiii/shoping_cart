@@ -1,43 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
-    <meta name="author" content="Pranav Joshi">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <meta name="author" content="Pranav Joshi" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="nav-bar border flex">
-        <div class="logo ">
-        <img src="images/logo.png" alt="logo">
-        <h2 >Shopping Hub</h2>
+      <div class="nav-bar flex">
+        <div class="logo">
+          <article>
+            <img src="images/logo.png" alt="logo" />
+            <h2>Shopping Hub</h2>
+          </article>
         </div>
         <div class="choices flex">
-        <h2>Home</h2>
-        <h2>Products</h2>
-        <h2>Cart</h2>
+          <nav>
+            <a href="main.html"
+              ><button><span>Home</span></button></a
+            >
+          </nav>
+          <nav>
+            <a href="main.html"
+              ><button><span>Products</span></button></a
+            >
+          </nav>
+          <nav>
+            <a href="cart.html"
+              ><button><span>Cart</span></button></a
+            >
+          </nav>
         </div>
-        </div>
+      </div>
     </header>
     <main>
-        <section class="home-window flex">
-            <div class="side-bar border flex">
-                <nav><a href="main.html"><button>Home</button></a></nav>
-                <nav><a href="main.html">Products</a></nav>
-                <nav><a href="cart.html"><button>Cart</button></a></nav>
-                <nav><a href="main.html">Settings</a></nav>
+      <section class="home-window flex">
+        <div class="side-bar flex">
+          <nav>
+            <a href="main.html"
+              ><button><span>Home</span></button></a
+            >
+          </nav>
+          <nav>
+            <a href="main.html"
+              ><button><span>Products</span></button></a
+            >
+          </nav>
+          <nav>
+            <a href="cart.html"
+              ><button><span>Cart</span></button></a
+            >
+          </nav>
+          <nav>
+            <a href="main.html"
+              ><button><span>Settings</span></button></a
+            >
+          </nav>
+        </div>
+        <div class="main-content r">
+          <!-- products section -->
+          <ul class="products">
             
-            </div>
-            <div class="products border flex">
-                <h1>product section</h1>
-            </div>
-        </section>
+          <article>
+            <h1>Filters</h1>
+            <label for="brand">Brand</label>
+            <select id="brand">
+              <option>Apple</option>
+              <option>Samsung</option>
+              <option>Sony</option>
+            </select>
+            <label for="price">Price</label>
+            <select name="price" id="price">
+              <option value="€<€20"><€20</option>
+              <option value="€<€50"><€50</option>
+              <option value="€<€100"><€100</option>
+            </select>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
-      <h1>contact us</h1>  
+      <article class="about-us">
+        <h1>About us</h1>
+        <p>
+          Shopping Hub is a simple online shopping store created to make
+          everyday shopping easy and convenient. We offer a variety of products,
+          including electronics, accessories, home appliances, and furniture.
+          Our goal is to provide a clean and user-friendly shopping experience
+          where customers can easily browse products, view their prices, and add
+          items to their cart.
+        </p>
+      </article>
+      <article class="contact-us">
+        <h1>Contact us</h1>
+        <p>
+          Have a question or need help?<br>
+          Feel free to contact us and we'll be
+          happy to help.<br>
+           Email: support@shoppinghub.com <br>
+           Phone: +46 70 123 45 67<br>
+          Address: Stockholm, Sweden
+        </p>
+      </article>
     </footer>
-</body>
+  </body>
 </html>
