@@ -12,9 +12,9 @@
 ========================= */
 .home-window{
     display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
-    align-items: stretch;
+    justify-content: flex-start;
+     
+    
 }
 
 
@@ -24,13 +24,14 @@
 
 .nav-bar{
     display: flex;
-    justify-content: space-evenly; 
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.nav-bar nav button span {
+.nav-bar span {
     display: inline-block;
     transition: transform 0.3s;
+
 }
 
 nav a{
@@ -43,12 +44,23 @@ nav a{
 ========================= */
 
 .side-bar{
-    display: block;
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 40px;
+    padding: 5px;
 }
+.categories-selection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 0px;
+}
+.categories-selection ul{
+    padding: 0px;
+}
+
+
+
 
 
 /* =========================
@@ -85,12 +97,10 @@ nav a{
 
 .choices{
     display: flex;
-    flex-grow: 1;
-    justify-content: space-evenly;
+
 }
 
 .choices button{
-    border: 0px;
     padding: 15px 30px;
     font-size: 30px;
     width: 150px;
@@ -143,19 +153,20 @@ nav a{
    ANIMATIONS
 ========================= */
 
-nav button:hover {
+.nav-bar button:hover {
     background-color: black;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-nav button:hover span {
+.nav-bar button:hover span {
     transform: scale(1.2);
 }
 
 .logo img:hover{
     transform: scale(1.1);
 }
+
 
 .products img:hover{
     transform: scale(1.1);
@@ -172,12 +183,25 @@ nav button:hover span {
    FOOTER
 ========================= */
 
-.contact-us,p,h1{
-    margin: 0;
+.footer{
+    display: flex;
+    border-top: solid 5px blue;
+    padding: 10px;
+    justify-content: space-between;
+}
+.contact-us h2{
+    margin-bottom: 0px;
 }
 
-.contact-us h1{
-    margin-top: 20px;
+.contact-us p{
+    margin-top: 0px;
+}
+
+.about-us p{
+    margin-top: 0px;
+}
+.about-us h2{
+    margin-bottom: 0px;
 }
 
 
@@ -186,16 +210,32 @@ nav button:hover span {
 ========================= */
 
 @media (max-width:1024px) {
-
+    .logo{
+        align-items: center;
+    }
     .nav-bar{
         display: flex;
+        flex-direction: column;
     }
-
-    .side-bar
+    .categories-selection{
+       margin-left: 30px;
+    }
+    .choices{
+        gap: 10px;
+    }
+    .side-bar{
+        margin-top: 10px;
+    }
+    .side-bar h2{
+        margin-left: 105px;
+    }
+    .categories-selection{
+        flex-direction: row;
+    }
     
-    nav button{
+    .choices button{
         width: 100px;
-        font-size: medium;
+        font-size: 20px;
     }
 
     .categories-selection{
@@ -207,7 +247,7 @@ nav button:hover span {
     }
 
     .logo img{
-        margin-left: 45px
+        margin-left: 70px
     }
 
     .main-content{
