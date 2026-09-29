@@ -9,98 +9,93 @@
   </head>
   <body>
     <header>
-      <div class="nav-bar flex">
+      <div class="nav-bar">
         <div class="logo">
           <article>
             <img src="images/logo.png" alt="logo" />
-            <h2>Shopping Hub</h2>
+            <h1>Shopping Hub</h1>
           </article>
         </div>
-        <div class="choices flex">
+        <div class="choices">
           <nav>
-            <a href="main.html"
-              ><button><span>Home</span></button></a
-            >
-          </nav>
-          <nav>
-            <a href="main.html"
-              ><button><span>Products</span></button></a
-            >
-          </nav>
-          <nav>
-            <a href="cart.html"
-              ><button><span>Cart</span></button></a
-            >
+            <a href="main.html"><span>Home</span></a>
+            <a href="main.html#products"><span>Products</span></a>
+            <a href="cart.html"><span>Cart</span></a>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="home-window flex">
-        <div class="side-bar flex">
-          <nav>
-            <a href="main.html"
-              ><button><span>Home</span></button></a
-            >
-          </nav>
-          <nav>
-            <a href="main.html"
-              ><button><span>Products</span></button></a
-            >
-          </nav>
-          <nav>
-            <a href="cart.html"
-              ><button><span>Cart</span></button></a
-            >
-          </nav>
-          <nav>
-            <a href="main.html"
-              ><button><span>Settings</span></button></a
-            >
-          </nav>
+      <div class="home-window cart-page">
+        <div class="main-content-cart">
+          <p class="cart-note">This is a static cart preview</p>
+          <section>
+            <div class="cart-product-section">
+              <article class="cart-row">
+                <section class="cart-product">
+                  <img
+                    src="images/unnamed.png"
+                    alt="Google Pixel 10"
+                    class="cart-product-image"
+                  />
+                  <div class="cart-product-detail">
+                    <p class="cart-product-name">Google Pixel 10</p>
+                    <p class="cart-product-price">10,000 SEK</p>
+                    <p class="cart-product-quantity">Quantity: 1</p>
+                  </div>
+                </section>
+                <section class="cart-remove-button">
+                  <button>Remove</button>
+                </section>
+              </article>
+              <article class="cart-row">
+                <section class="cart-product">
+                  <img
+                    src="images/mac-card-40-macbook-neo-202603_FMT_WHH.png"
+                    alt="MacBook Neo"
+                    class="cart-product-image"
+                  />
+                  <div class="cart-product-detail">
+                    <p class="cart-product-name">MacBook Neo</p>
+                    <p class="cart-product-price">10,000 SEK</p>
+                    <p class="cart-product-quantity">Quantity: 1</p>
+                  </div>
+                </section>
+                <section class="cart-remove-button">
+                  <button>Remove</button>
+                </section>
+              </article>
+            </div>
+          </section>
+          <section class="total-price-section">
+            <div class="total-price">
+              <p>Total price</p>
+              <p>20,000 SEK</p>
+            </div>
+          </section>
         </div>
-        <div class="main-content r">
-          <!-- products section -->
-          <ul class="products">
-            
-          <article>
-            <h1>Filters</h1>
-            <label for="brand">Brand</label>
-            <select id="brand">
-              <option>Apple</option>
-              <option>Samsung</option>
-              <option>Sony</option>
-            </select>
-            <label for="price">Price</label>
-            <select name="price" id="price">
-              <option value="€<€20"><€20</option>
-              <option value="€<€50"><€50</option>
-              <option value="€<€100"><€100</option>
-            </select>
-          </article>
-        </div>
-      </section>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <article class="about-us">
-        <h1>About us</h1>
+        <h2>About us</h2>
         <p>
           Shopping Hub is a simple online shopping store created to make
-          everyday shopping easy and convenient. We offer a variety of products,
-          including electronics, accessories, home appliances, and furniture.
-          Our goal is to provide a clean and user-friendly shopping experience
+          everyday shopping easy and convenient. <br />
+          We offer a variety of products, including electronics, accessories,
+          home appliances, and furniture. <br />Our goal is to provide a clean
+          and user-friendly shopping experience <br />
           where customers can easily browse products, view their prices, and add
           items to their cart.
         </p>
       </article>
       <article class="contact-us">
-        <h1>Contact us</h1>
+        <h2>Contact us</h2>
         <p>
-          Have a question or need help?<br>
-          Feel free to contact us and we'll be
-          happy to help.<br>
-           Email: support@shoppinghub.com <br>
-           Phone: +46 70 123 45 67<br>
+          Have a question or need help?<br />
+          Feel free to contact us and we'll be happy to help.<br />
+          Email: support@shoppinghub.com <br />
+          Phone: +46 70 123 45 67<br />
           Address: Stockholm, Sweden
         </p>
       </article>
