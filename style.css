@@ -104,7 +104,7 @@ nav a {
 /* GRID #4: 3 products per row */
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-left: 10px;
   padding: 0;
   gap: 20px;
@@ -144,6 +144,8 @@ nav a {
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 /* =========================
@@ -176,7 +178,7 @@ nav a {
   justify-content: center;
   align-items: center;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
   margin-bottom: 15px;
   transition: 0.3s;
   width: 100px;
