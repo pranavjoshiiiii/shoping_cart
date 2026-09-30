@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto; /* header = its height, main = leftover space, footer = its height */
+  background-color: #f5f8fc;
 }
 
 /* GRID #2: splits the main area into sidebar + content */
@@ -49,6 +50,7 @@ nav a {
   display: flex;
   flex-direction: column;
   padding: 5px;
+  background-color: #eef3fa;
 }
 .categories-selection {
   display: flex;
@@ -116,7 +118,8 @@ nav a {
   border-radius: 20px;
   transition: 0.3s;
   object-fit: contain;
-  width: 290px;
+  width: 90%;
+  max-width: 290px;
   height: 290px;
 }
 .product-name {
@@ -253,6 +256,7 @@ nav a {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: white;
 }
 
 .cart-product {
@@ -321,6 +325,7 @@ nav a {
   padding: 10px;
   justify-content: center;
   gap: 60px;
+  background-color: #dbe6f5;
 }
 .contact-us h2 {
   margin-bottom: 0px;
@@ -328,13 +333,7 @@ nav a {
 
 .contact-us p {
   margin-top: 0px;
-}
-
-.about-us p {
-  margin-top: 0px;
-}
-.about-us h2 {
-  margin-bottom: 0px;
+  
 }
 
 /* =========================
@@ -391,7 +390,7 @@ nav a {
   .products {
     grid-template-columns: repeat(1, 1fr);
     padding: 0px;
-    margin: 0px;
+    margin: 20px;
     margin-top: 10px;
   }
 
